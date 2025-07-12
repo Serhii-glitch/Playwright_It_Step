@@ -11,6 +11,7 @@ test('Wikipedia', async ({page}) => {
     await page.keyboard.press('Enter');
     await page.locator('.mw-redirect.mw-disambig').click();
     await expect(page).toHaveTitle(/тест/i);
+    await page.locator('');
 });
 
 //class="vector-search-box-inner"
