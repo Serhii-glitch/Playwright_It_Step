@@ -2,8 +2,9 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   use: {
-    headless: false,
-    video: 'retain-on-failure',
-    screenshot: 'only-on-failure',
+    headless: false, // запускать тесты с видимым браузером
+    screenshot: 'only-on-failure', // делать скриншоты при ошибках
+    video: 'retain-on-failure', // сохранять видео только при ошибках
+    baseURL: 'https://example.com' // базовый URL для тестов
   },
 });
