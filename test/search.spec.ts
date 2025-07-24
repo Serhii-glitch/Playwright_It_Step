@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { GiphyHomePage } from '../pages/GiphyHomePage';
-import { SearchPage } from '../pages/SearchPage';
+import { SearchPage } from '../pages/GiphySearchPage';
 //import { WikiMainPage } from '../pages/WikiMainPage';
 //import { ArticlePage } from '../pages/article_page'; 
 
